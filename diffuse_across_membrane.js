@@ -6,16 +6,6 @@
  * Those who know something about statistical physics ought avert their gaze,and it's still full of magic numbers.
  */
 
-/** Refactored by Kevin Shi 3/3/2015
- * Changelog:
- * - Magic numbers removed, settings (global constants) moved to top
- * - New collision detection system for box boundaries, not yet correct but removes +15 hack on sim redraw
- * - Position, width of membrane can now be adjusted
- * - Atom position judged by topleft corner instead of centre, size adjustable
- * - Redesign of concentration count: now expressed as integer / 100 (membrane position dependent)
- * - Canvas element now occupies full screen, simulation expands to fill space (not responsive)
-*/
-
 // Global settings
 var NUMBER_OF_ATOMS = 1000;
 var MEMBRANE_LOCATION = 0.8; // position of membrane; proportion of box taken by LHS
